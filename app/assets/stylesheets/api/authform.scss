@@ -1,0 +1,120 @@
+.modal {
+  // display: flex;
+  // justify-content: center;
+  position: relative;
+  width: 300px;
+  box-shadow: 4px 4px 4px #820C1A;
+}
+
+
+.modal header{
+  font-family: 'Zilla Slab', serif;
+  font-size: 40px;
+  padding: 5px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  color: #820C1A;
+  font-weight: 600;
+}
+
+.modal p {
+  font-family: 'Zilla Slab', serif;
+  display: flex;
+  justify-content: center;
+  color: #982e2e;
+}
+
+.modal a.x {
+  position: absolute;
+  font: 16px/100% arial, sans-serif;
+  border-radius: 1px;
+  color: #78100D;
+  right: 10px;
+  top: 10px;
+  text-shadow: 0 1px 0 #fff;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.modal a.x:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.modal form.auth-form {
+  color: #820C1A;
+  font-weight: 400;
+  font-family: 'Zilla Slab', serif;
+  font-size: 20px;
+  width: 90%;
+  margin: auto;
+  // border: 1px solid black;
+}
+
+.modal form.auth-form h2 {
+  // border: 1px solid black;
+  padding: 10px 0px 5px 0px;
+}
+
+label.extra input {
+  width: 250px;
+  padding: 5px 5px;
+  font-size: 16px;
+
+}
+
+.modal form{
+  margin-bottom: 20px;
+}
+
+.modal input.input {
+  width: 250px;
+  padding: 5px 5px;
+  font-size: 16px;
+
+}
+
+a.link-to-other {
+  // border: 1px solid black;
+  margin-top: 20px;
+  font-family: 'Zilla Slab', serif;
+  display: flex;
+  justify-content: center;
+}
+
+.modal input.submit-button {
+  display: block;
+  font-family: 'Zilla Slab', serif;
+  font-size: 20px;
+  border: 1px solid black;
+  font-weight: bold;
+  color: white;
+  margin-left: 170px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px #651601;
+  background-color: #820C1A;
+}
+
+
+.modal input.submit-button:hover {
+  background-color: #651601;
+  cursor: pointer;
+}
+
+.modal input.submit-button:active {
+  background-color: #651601;
+  box-shadow: 0 1px #999;
+  transform: translateY(4px);
+}
+
+.modal a {
+  font-family: 'Zilla Slab', serif;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
