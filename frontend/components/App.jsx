@@ -2,7 +2,8 @@ import React from 'react';
 import HeaderContainer from './header/header_container';
 import AuthFormContainer from './authsession/auth_form_container';
 import { Route, Switch, Link } from 'react-router-dom';
-// import {AuthRoute, ProtectedRoute} from '../util/route_util';
+import {AuthRoute, ProtectedRoute} from '../util/route_util';
+import MainPageContainer from './main/main_container';
 
 
 
@@ -13,8 +14,9 @@ const App = () => (
       <HeaderContainer />
     </header>
     <Switch>
-      <Route exact path="/login" component={AuthFormContainer} />
-      <Route exact path="/signup" component={AuthFormContainer} />
+      <AuthRoute exact path="/login" component={AuthFormContainer} />
+      <AuthRoute exact path="/signup" component={AuthFormContainer} />
+      <ProtectedRoute path="/main" component={MainPageContainer} />
     </Switch>
   </div>
 );

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link, withRouter} from 'react-router-dom';
+import Modal from 'react-modal';
 import { browserHistory, Router } from 'react-router';
 
 class AuthForm extends React.Component {
@@ -16,24 +17,25 @@ class AuthForm extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-  if (this.props.location.pathname !== nextProps.location.pathname){
-    this.props.clearErrors();
-    this.setState({
-      username: "",
-      email: "",
-      password: ""
-    });
-  } else if (nextProps.loggedIn) {
-      this.props.history.push('/');
-      // Router.History.back();
-      // this.props.history.goBack();
-    }
+  // if (this.props.location.pathname !== nextProps.location.pathname){
+  //   this.props.clearErrors();
+  //   this.setState({
+  //     username: "",
+  //     email: "",
+  //     password: ""
+  //   });
+  // } else if (nextProps.loggedIn) {
+  //     this.props.history.push('/main');
+  //     // Router.History.back();
+  //     // this.props.history.goBack();
+  //   }
   }
 
   handleSubmit(e) {
     e.preventDefault();
     this.props.processForm(this.state).then(() => {
-      this.props.history.goBack();
+      // this.props.history.goBack();
+      this.props.history.push('/main');
     });
   }
 
