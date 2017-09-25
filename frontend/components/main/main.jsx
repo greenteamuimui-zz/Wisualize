@@ -1,42 +1,40 @@
 import React from 'react';
 import {Link, withRouter } from 'react-router-dom';
-import {getBadges} from '../../util/badges_util';
 import BadgeBox from './badge';
+import WonoloersListContainer from './wonoloers_list_container';
 
 
 class MainPage extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      badges: []
     };
   }
 
   componentDidMount() {
-    getBadges(this.props.currentUser.api_access_token).then(
-      data => this.setState({
-        badges: data.badges
-      }));
+    // getBadges(this.props.currentUser.api_access_token).then(
+    //   data => this.setState({
+    //     badges: data.badges
+    //   }));
+    this.props.fetchBadges(this.props.currentUser.api_access_token);
     }
 
   render(){
-    let badges;
-    if (this.state.badges.length === 0){
-      return(
-        <div>
-          <h1>Badges</h1>
-            <h2>Loading</h2>
-        </div>);
+    if (!this.props.badges) {
+      return null;
     } else {
+    let badges = this.props.badges.badges;
     return(
       <div>
+      <div className="badgebox">
         <h1>Badges</h1>
-          {this.state.badges.map((indivbadge, idx) => <BadgeBox indivbadge={indivbadge} key={idx} />)}
+          {badges.map((indivbadge, idx) => <BadgeBox indivbadge={indivbadge} key={idx} />)}
       </div>
+      <WonoloersListContainer />
+    </div>
     );
-  }}
+  }
+  }
 }
-          //
-          // {this.state.badges.map((indivbadge, idx) => <badgeBox indivbadge={indivbadge} key={idx} />)}
 
 export default withRouter(MainPage);

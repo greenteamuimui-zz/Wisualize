@@ -1,19 +1,20 @@
 import {connect} from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import {fetchBadges} from '../../actions/badges_actions';
+import {fetchUsers} from '../../actions/users_actions';
 import {clearErrors} from '../../actions/errors_actions';
-import MainPage from './main';
+import WonoloersList from './wonoloers_list';
 
 const mapStatetoProps = (state) => {
   return {
     currentUser: state.currentUser,
-    badges: state.badges
+    badges: state.badges,
+    users: state.users
   };
 };
 
 const mapDispatchtoProps = (dispatch) => {
   return {
-    fetchBadges: (token) => dispatch(fetchBadges(token)),
+    fetchUsers: (token, page) => dispatch(fetchUsers(token, page)),
     clearErrors: () => dispatch(clearErrors())
   };
 };
@@ -21,4 +22,4 @@ const mapDispatchtoProps = (dispatch) => {
 export default withRouter(connect(
   mapStatetoProps,
   mapDispatchtoProps
-)(MainPage));
+)(WonoloersList));

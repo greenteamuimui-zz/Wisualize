@@ -1,0 +1,15 @@
+.badgebox {
+  border: 1px solid black;
+  display: flex;
+}
+
+.indivBadge {
+  border: 1px solid black;
+  height: 100%;
+  padding: 10px;
+  margin: 5px;
+}
+
+.indivBadge img {
+  width: 100px;
+}
