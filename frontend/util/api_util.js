@@ -15,3 +15,12 @@ export const getUsers = (token, page) => {
     })
   );
 };
+
+export const getJobs = (token, page) => {
+  return (
+    $.ajax({
+      method: 'GET',
+      url: `http://api.wonolo.com/api_v2/job_requests?token=${token}&page=${page}&per=50`,
+    })
+  );
+};

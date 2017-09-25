@@ -44,6 +44,7 @@ class WonoloersList extends React.Component {
   });
   }).then(() => this.setState({workers: workers}));
   this.setState({count: this.state.count + count});
+  this.setState({results: []})
   }
 
   displayText(value) {
