@@ -4,7 +4,6 @@ export const RECEIVE_JOBS = "RECEIVE_JOBS";
 
 
 export const fetchJobs = (token, page) => (dispatch) => {
-  console.log(page);
   return (
     APIUtil.getJobs(token, page).then(
       jobs => {

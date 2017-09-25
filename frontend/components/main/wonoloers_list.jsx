@@ -89,7 +89,6 @@ class WonoloersList extends React.Component {
     }
   }
 
-// }).then(() => this.setState({workers: workers}));
   render(){
     let back;
     let results;

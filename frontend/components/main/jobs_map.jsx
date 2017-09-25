@@ -27,36 +27,12 @@ class JobsMap extends React.Component {
     const map = this.refs.map;
     this.map = new google.maps.Map(map, mapOptions);
     this.JobsMarkerManager = new JobsMarkerManager(this.map, this.handleMarkerClick.bind(this));
-    // if (this.props.singleJob) {
-    //   this.props.fetchJob(this.props.jobId);
-    // } else {
-      // this.registerListeners();
     let jobs = this.props.jobs || [];
     this.JobsMarkerManager.updateMarkers(jobs);
   }
   componentDidUpdate() {
-    // if (this.props.singleJob) {
-    //   const targetJobKey = Object.keys(this.props.jobs)[0];
-    //   const targetJob = this.props.jobs[targetJobKey];
-    //   this.MarkerManager.updateMarkers([targetJob]); //grabs only that one bench
-    // } else {
-      this.JobsMarkerManager.updateMarkers(this.props.jobs);
-    // }
+    this.JobsMarkerManager.updateMarkers(this.props.jobs);
   }
-
-  // registerListeners() {
-  //   google.maps.event.addListener(this.map, 'idle', () => {
-  //     const { north, south, east, west } = this.map.getBounds().toJSON();
-  //     const bounds = {
-  //       northEast: { lat:north, lng: east },
-  //       southWest: { lat: south, lng: west } };
-  //     this.props.updateFilter('bounds', bounds);
-  //   });
-  //   google.maps.event.addListener(this.map, 'click', (event) => {
-  //     const coords = getCoordsObj(event.latLng);
-  //     this.handleClick(coords);
-  //   });
-  // }
 
   handleMarkerClick(job) {
     this.setState({jobDetail: job, modalState: true});
@@ -67,6 +43,7 @@ class JobsMap extends React.Component {
   }
 
   render() {
+    let hours;
     const customStyles = {
     overlay : {
       position          : 'fixed',
@@ -93,6 +70,13 @@ class JobsMap extends React.Component {
       display                     :'flex',
     }
   };
+  if((this.state.jobDetail.duration / 60) > 1) {
+    hours = `${this.state.jobDetail.duration / 60}hours`;
+  } else if (this.state.jobDetail.duration === null) {
+    hours = "N/A";
+  } else {
+    hours = `${this.state.jobDetail.duration}mins`;
+  }
     return (
       <div>
         <h1>Map</h1>
@@ -105,8 +89,10 @@ class JobsMap extends React.Component {
             animationType={"fade"}
             style={customStyles}
             >
+            <i className="material-icons">work</i><h4>{this.state.jobDetail.category}</h4>
+            <i className="material-icons">timer</i><h4>{hours}</h4>
+            <i className="material-icons">description</i><h4>{this.state.jobDetail.description}</h4>
             <a className ="x" onClick={this.closeModal}>x</a>
-            <i className="material-icons">bubble_chart</i><h4>{this.state.jobDetail.category}</h4>
           </Modal>
       </div>
     );
