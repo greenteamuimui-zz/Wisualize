@@ -12,6 +12,7 @@ const App = () => (
     <header className="app-header">
       <h1>Wisualize</h1>
       <HeaderContainer />
+      <img src="../../app/assets/images/work.jpeg"/>
     </header>
     <Switch>
       <AuthRoute exact path="/login" component={AuthFormContainer} />

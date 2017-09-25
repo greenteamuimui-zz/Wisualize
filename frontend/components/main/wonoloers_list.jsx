@@ -112,7 +112,7 @@ class WonoloersList extends React.Component {
       return null;
     } else {
     return(
-      <div className="badgebox">
+      <div className="WonoloersList">
         <h1>Wonoloers</h1>
         {this.state.workers.map((worker, idx) => <WorkerBox worker={worker} key={idx} badges={this.props.badges}/>)}
         {this.state.message}

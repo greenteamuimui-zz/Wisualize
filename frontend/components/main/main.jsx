@@ -28,16 +28,22 @@ class MainPage extends React.Component {
     } else {
     let badges = this.props.badges.badges;
     return(
-      <div>
-      <div className="badgebox">
-        <h1>Badges</h1>
-          {badges.map((indivbadge, idx) => <BadgeBox indivbadge={indivbadge} key={idx} />)}
-      </div>
-      <WonoloersListContainer />
-      <JobsMap jobs={this.props.jobs} />
-        <div className="next" onClick={this.handleSubmit}>
-            <i id="next" className="material-icons">navigate_next</i><h3 id="next">Random Job</h3>
+    <div className="main">
+      <div className="mainleft">
+        <div className="badgebox">
+          <h1>Badges</h1>
+            {badges.map((indivbadge, idx) => <BadgeBox indivbadge={indivbadge} key={idx} />)}
         </div>
+        <div className="jobs">
+        <JobsMap jobs={this.props.jobs} />
+          <div className="next" onClick={this.handleSubmit}>
+              <i id="next" className="material-icons">navigate_next</i><h3 id="next">Random Job</h3>
+          </div>
+        </div>
+      </div>
+      <div className="wonoloers">
+        <WonoloersListContainer />
+      </div>
     </div>
     );
   }

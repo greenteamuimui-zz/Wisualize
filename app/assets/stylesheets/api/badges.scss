@@ -1,6 +1,7 @@
 .badgebox {
   border: 1px solid black;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .indivBadge {
@@ -11,5 +12,9 @@
 }
 
 .indivBadge img {
+  width: 100px;
+}
+
+img.badge {
   width: 100px;
 }

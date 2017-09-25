@@ -13,11 +13,15 @@ const WorkerBox = ({worker, badges}) => {
   }
   let rating = worker.rating === null ? "None" : worker.rating.slice(0, 4);
   return (
-    <div className="indivBadge">
-      <h2>{worker.first_name}</h2>
-      <img src={worker.avatar_url} />
-      <h3>{rating}</h3>
-      {badgesUrl.map((url, idx) => <img src={url} key={idx}/>)}
+    <div className="indivworker">
+      <div className="workerleft">
+        <img className="picture" src={worker.avatar_url} />
+        <h2>{worker.first_name}</h2>
+        <h3>Rating: {rating}</h3>
+      </div>
+      <div className="workerright">
+        {badgesUrl.map((url, idx) => <img className="badge" src={url} key={idx}/>)}
+      </div>
     </div>
   );
 };
