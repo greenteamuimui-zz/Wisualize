@@ -1,20 +1,34 @@
 .badgebox {
-  border: 1px solid black;
+  border: 5px solid #ffdc00;
+  border-radius: 3pc;
   display: flex;
   flex-wrap: wrap;
+  background-color: rgba(169, 169, 169, 0.63);
+  height: 50%;
+  padding: 5px;
+  justify-content: center;
+  overflow-y: scroll;
 }
 
 .indivBadge {
-  border: 1px solid black;
-  height: 100%;
   padding: 10px;
   margin: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
 }
 
 .indivBadge img {
   width: 100px;
 }
 
+.indivBadge h2{
+  font-size: 18px;
+  margin: auto;
+  text-align: center;
+}
+
 img.badge {
   width: 100px;
+  padding: 5px;
 }

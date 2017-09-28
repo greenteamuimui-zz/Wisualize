@@ -1,0 +1,24 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  background-color: #4e4e4e;
+  opacity: 0.7;
+  border: 2px solid gold;
+  border-radius: 5px;
+}
+
+.header-beforelogin {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-beforelogin a {
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}

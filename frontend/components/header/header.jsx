@@ -5,8 +5,8 @@ const Header = ({currentUser, logout, logInAsGuest}) =>{
   if (currentUser) {
     return (
       <div className="header-afterlogin">
-        <h1>Welcome {currentUser.username}!</h1>
-        <a onClick={logout}>Log Out</a>
+          <h1>Welcome {currentUser.username}!</h1>
+          <a onClick={logout}>Log Out</a>
       </div>
     );
   } else {

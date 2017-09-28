@@ -1,0 +1,120 @@
+.WonoloersList {
+  position: relative;
+}
+
+
+.wonoloers {
+  flex:1.5;
+  padding: 20px;
+  overflow: auto;
+}
+
+.wonoloers h1 {
+  font-size: 35px;
+  padding: 10px;
+  text-align: center;
+}
+
+.indivworker {
+  display: flex;
+  padding: 20px;
+  margin: auto;
+}
+
+.workerright {
+  margin: auto;
+  overflow: auto;
+  width: 60%;
+  height: 120px;
+}
+
+.workerleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.workerleft h2{
+  padding: 5px;
+  font-size: 20px;
+}
+.workerleft h3{
+  padding: 3px;
+  font-size: 15px;
+}
+
+.workers-list {
+  margin-top: 40px;
+}
+
+.workerleft img {
+  width: 150px;
+}
+
+img.in-progress {
+  width: 60%;
+  margin-left: 20%;
+  height: 90%;
+}
+
+.badgeSearch input.search {
+  border-radius: 5px 5px 0px 0px;
+  margin-left: 10px;
+  height: 18px;
+}
+
+.badgeSearch h2 {
+  font-size: 23px;
+}
+
+.auto-fill{
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+.results {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 168px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.submit-button {
+  position: absolute;
+  top: 55px;
+  left: 360px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-color: #fdd601;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 15px;
+  box-shadow: 2px 2px 2px darkgoldenrod;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-button:active {
+  background-color: #c3a500;
+  box-shadow: 1 1px darkgoldenrod;
+  transform: translateY(4px)
+}
+
+.input-form-text {
+  display: flex;
+}
+
+.list-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 25px;
+}

@@ -29,12 +29,15 @@ class AuthForm extends React.Component {
   //     // Router.History.back();
   //     // this.props.history.goBack();
   //   }
+
+    if (nextProps.loggedIn) {
+      this.props.history.push('/main');
+      }
   }
 
   handleSubmit(e) {
     e.preventDefault();
     this.props.processForm(this.state).then(() => {
-      // this.props.history.goBack();
       this.props.history.push('/main');
     });
   }

@@ -1,4 +1,35 @@
 .map {
   width: 500px;
   height: 500px;
-};
+  margin: auto;
+}
+
+.mapComponent {
+  padding: 20px;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.next:hover {
+  cursor: pointer;
+}
+.ReactModalPortal h4 {
+  padding: 10px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+a.x {
+  position: absolute;
+  left: 90%;
+  cursor: pointer;
+  padding: 5px;
+  top: 5%;
+  font-size: 15px;
+  font-weight: 600;
+}

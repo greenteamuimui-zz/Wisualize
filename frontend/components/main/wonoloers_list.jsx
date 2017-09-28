@@ -102,7 +102,7 @@ class WonoloersList extends React.Component {
     if (this.state.results) {
       results = (this.state.results.map((badge, idx) => {
         return (
-        <div key={idx} onClick={this.updateSearch(badge.id)}>{badge.name}</div>
+        <div className="auto-fill" key={idx} onClick={this.updateSearch(badge.id)}>{badge.name}</div>
         );
       }));
     } else {
@@ -114,24 +114,35 @@ class WonoloersList extends React.Component {
     return(
       <div className="WonoloersList">
         <h1>Wonoloers</h1>
-        {this.state.workers.map((worker, idx) => <WorkerBox worker={worker} key={idx} badges={this.props.badges}/>)}
-        {this.state.message}
-        {back}
-        <div className="next" onClick={this.handleSubmit}>
-            <i id="next" className="material-icons">navigate_next</i><h3 id="next">Next</h3>
-        </div>
-        <form className="badgeSearch" onSubmit={this.handleSearch}>
-          <input className="search" type="text"
-          value={this.state.search}
-          onChange={this.updateState()}
-          />
-          <ul className="results">
-            <div>
-              {results}
+        <div className="search-bar">
+          {this.state.message}
+          <form className="badgeSearch" onSubmit={this.handleSearch}>
+            <div className="search-results">
+              <div className="input-form-text">
+                <h2>Search By Badge Name</h2>
+                <input className="search" type="text"
+                value={this.state.search}
+                onChange={this.updateState()}
+                />
+              </div>
+              <ul className="results">
+                <div className="auto-fill-results">
+                  {results}
+                </div>
+              </ul>
             </div>
-          </ul>
-        <input className="submit-button" type="submit" value="Submit" />
-        </form>
+            <input className="submit-button" type="submit" value="Submit" />
+          </form>
+        </div>
+        <div className="workers-list">
+          {this.state.workers.map((worker, idx) => <WorkerBox worker={worker} key={idx} badges={this.props.badges}/>)}
+        </div>
+        <div className="list-nav">
+          {back}
+          <div className="next" onClick={this.handleSubmit}>
+            <i id="next" className="material-icons">navigate_next</i><h3 id="next">Next</h3>
+          </div>
+        </div>
       </div>
     );
   }

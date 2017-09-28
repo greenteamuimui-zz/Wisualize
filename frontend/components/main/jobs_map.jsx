@@ -59,7 +59,7 @@ class JobsMap extends React.Component {
       left                       : '35%',
       right                      : 'auto',
       bottom                     : 'auto',
-      border                     : '1px solid #651601',
+      border                     : '2px solid gold',
       background                 : '#fff',
       overflow                   : 'auto',
       WebkitOverflowScrolling    : 'touch',
@@ -68,6 +68,9 @@ class JobsMap extends React.Component {
       padding                    : '30px',
       textalign                 :'center',
       display                     :'flex',
+      flexDirection            :'column',
+      maxWidth :'400px',
+      minWidth :'200px',
     }
   };
   if((this.state.jobDetail.duration / 60) > 1) {
@@ -78,7 +81,7 @@ class JobsMap extends React.Component {
     hours = `${this.state.jobDetail.duration}mins`;
   }
     return (
-      <div>
+      <div className="mapComponent">
         <h1>Map</h1>
         <div className="map" ref="map">Map</div>
           <Modal

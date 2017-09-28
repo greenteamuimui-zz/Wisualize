@@ -30,14 +30,14 @@ class MainPage extends React.Component {
     return(
     <div className="main">
       <div className="mainleft">
+        <h1>Badges</h1>
         <div className="badgebox">
-          <h1>Badges</h1>
             {badges.map((indivbadge, idx) => <BadgeBox indivbadge={indivbadge} key={idx} />)}
         </div>
         <div className="jobs">
         <JobsMap jobs={this.props.jobs} />
           <div className="next" onClick={this.handleSubmit}>
-              <i id="next" className="material-icons">navigate_next</i><h3 id="next">Random Job</h3>
+              <i id="next" className="material-icons">location_searching</i><h3 id="next">Get Random Jobs</h3>
           </div>
         </div>
       </div>

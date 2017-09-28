@@ -8,16 +8,15 @@ import MainPageContainer from './main/main_container';
 
 
 const App = () => (
-  <div>
+  <div className="app">
     <header className="app-header">
       <h1>Wisualize</h1>
       <HeaderContainer />
-      <img src="../../app/assets/images/work.jpeg"/>
     </header>
     <Switch>
       <AuthRoute exact path="/login" component={AuthFormContainer} />
       <AuthRoute exact path="/signup" component={AuthFormContainer} />
-      <ProtectedRoute path="/main" component={MainPageContainer} />
+      <ProtectedRoute exact path="/main" component={MainPageContainer} />
     </Switch>
   </div>
 );
