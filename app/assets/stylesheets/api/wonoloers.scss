@@ -81,7 +81,7 @@ img.in-progress {
   border-radius: 0px 0px 5px 5px;
 }
 
-.submit-button {
+.w-submit-button {
   position: absolute;
   top: 55px;
   left: 360px;
@@ -97,7 +97,7 @@ img.in-progress {
   cursor: pointer;
 }
 
-.submit-button:active {
+.w-submit-button:active {
   background-color: #c3a500;
   box-shadow: 1 1px darkgoldenrod;
   transform: translateY(4px)

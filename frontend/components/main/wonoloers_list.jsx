@@ -131,7 +131,7 @@ class WonoloersList extends React.Component {
                 </div>
               </ul>
             </div>
-            <input className="submit-button" type="submit" value="Submit" />
+            <input className="w-submit-button" type="submit" value="Submit" />
           </form>
         </div>
         <div className="workers-list">

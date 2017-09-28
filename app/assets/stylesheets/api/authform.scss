@@ -3,7 +3,7 @@
   // justify-content: center;
   position: relative;
   width: 300px;
-  box-shadow: 4px 4px 4px #820C1A;
+  box-shadow: 4px 4px 4px #a58f17;
 }
 
 
@@ -13,7 +13,7 @@
   padding: 5px 0px 20px 0px;
   display: flex;
   justify-content: center;
-  color: #820C1A;
+  color: black;
   font-weight: 600;
 }
 
@@ -21,16 +21,16 @@
   font-family: 'Zilla Slab', serif;
   display: flex;
   justify-content: center;
-  color: #982e2e;
+  color: black;
 }
 
 .modal a.x {
   position: absolute;
   font: 16px/100% arial, sans-serif;
   border-radius: 1px;
-  color: #78100D;
+  color: darkgray;
   right: 10px;
-  top: 10px;
+  top: 5px;
   text-shadow: 0 1px 0 #fff;
   font-weight: 600;
   padding: 10px;
@@ -38,29 +38,27 @@
 
 .modal a.x:hover {
   cursor: pointer;
-  color: blue;
+  color: black;
 }
 
 .modal form.auth-form {
-  color: #820C1A;
+  color: #fdd601;
   font-weight: 400;
   font-family: 'Zilla Slab', serif;
   font-size: 20px;
   width: 90%;
   margin: auto;
-  // border: 1px solid black;
 }
 
 .modal form.auth-form h2 {
-  // border: 1px solid black;
   padding: 10px 0px 5px 0px;
+  color: black;
 }
 
 label.extra input {
   width: 250px;
   padding: 5px 5px;
   font-size: 16px;
-
 }
 
 .modal form{
@@ -83,19 +81,18 @@ a.link-to-other {
 }
 
 .modal input.submit-button {
-  display: block;
+  position: relative;
   font-family: 'Zilla Slab', serif;
   font-size: 20px;
-  border: 1px solid black;
+  border: 1px solid #a58f17;
   font-weight: bold;
   color: white;
-  margin-left: 170px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  left: 90px;
   padding: 3px 10px;
   border-radius: 5px;
-  box-shadow: 0 2px #651601;
-  background-color: #820C1A;
+  box-shadow: 0 2px #a58f17;
+  background-color: #fdd601;
+  margin-top: 10px;
 }
 
 
@@ -117,4 +114,5 @@ a.link-to-other {
   padding: 10px;
   cursor: pointer;
   font-weight: 600;
+  color: #523209;
 }

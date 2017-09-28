@@ -79,13 +79,17 @@ class AuthForm extends React.Component {
         left                       : '40%',
         right                      : 'auto',
         bottom                     : 'auto',
-        border                     : '5px solid #AE1628',
+        border                     : '5px solid #ffdc00',
         background                 : '#fff',
         overflow                   : 'auto',
         WebkitOverflowScrolling    : 'touch',
         borderRadius               : '10px',
         outline                    : 'none',
-        padding                    : '20px'
+        padding                    : '20px',
+        maxHeight                  : '400px',
+        minHeight                  : '350px',
+        display :'flex',
+        flexDirection: 'column',
       }
     };
 
