@@ -1,32 +1,46 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 
-const Header = ({currentUser, logout, logInAsGuest}) =>{
-  if (currentUser) {
-    return (
-      <div className="header-afterlogin">
-          <h1>Welcome {currentUser.username}!</h1>
-          <a onClick={logout}>Log Out</a>
-      </div>
-    );
-  } else {
-    return (
-      <div className="header-beforelogin">
-        <a onClick={() => logInAsGuest({
-          username: "Guest",
-          password: "123456"
-        })}>
-        Guest Log In
-        </a>
-        <Link to="/signup">
-          Sign Up
-        </Link>
-        <Link to="/login">
-          Log In
-        </Link>
-      </div>
-    );
+class Header extends React.Component {
+  constructor (props) {
+    super(props);
   }
-};
 
-export default Header;
+  componentWillReceiveProps(nextProps) {
+    console.log("here");
+    if (!this.props.loggedIn && nextProps.loggedIn) {
+      this.props.history.push('/main');
+    }
+  }
+
+  render () {
+    if (this.props.currentUser) {
+      return (
+        <div className="header-afterlogin">
+            <h1>Welcome {this.props.currentUser.username}!</h1>
+            <a onClick={this.props.logout}>Log Out</a>
+        </div>
+      );
+    } else {
+      return (
+        <div className="header-beforelogin">
+          <a onClick={() => this.props.logInAsGuest({
+            username: "Guest",
+            password: "123456"
+          })}>
+          Guest Log In
+          </a>
+          <Link to="/signup">
+            Sign Up
+          </Link>
+          <Link to="/login">
+            Log In
+          </Link>
+        </div>
+      );
+    }
+  }
+}
+
+
+export default withRouter(Header);

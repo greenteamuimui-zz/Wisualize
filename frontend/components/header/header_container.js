@@ -4,7 +4,8 @@ import Header from './header';
 import { withRouter } from 'react-router-dom';
 
 const mapStatetoProps = (state) => ({
-  currentUser: state.currentUser
+  currentUser: state.currentUser,
+  loggedIn: Boolean(state.currentUser),
 });
 
 const mapDispatchtoProps = (dispatch) => ({

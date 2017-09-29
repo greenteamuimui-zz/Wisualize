@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# **Wisualize**  
 
-Things you may want to cover:
+[Live link](https://wisualize.herokuapp.com)  
 
-* Ruby version
 
-* System dependencies
+## **Introduction**  
 
-* Configuration
++ Wisualize is a simple platform that visualizes the different components and features of Wonolo, an on-demand staffing marketplace.
 
-* Database creation
+### **Features**
 
-* Database initialization
++ Log-in functionality to access information
++ Display Wonolo's job badges
++ Generate and display random jobs as markers on Google Map with click-able descriptions
++ Fetch Wonoloers and display information with their name, picture, ratings and badges (user )
++ Search Wonoloers using badges types, auto-complete functionality for input
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Wisualize Platform](app/assets/images/features.png)
