@@ -12,7 +12,7 @@ export default class JobsMarkerManager {
 
     jobs.job_requests
       .filter(job => !this.markers[job.id])
-      .forEach(newJob => this.createMarkerFromBench(newJob, this.handleClick));
+      .forEach(newJob => this.createMarkerFromJob(newJob, this.handleClick));
 
     Object.keys(this.markers)
       .filter(jobId => !jobsObj[jobId])
@@ -20,7 +20,7 @@ export default class JobsMarkerManager {
     }
   }
 
-  createMarkerFromBench(job) {
+  createMarkerFromJob(job) {
     const position = new google.maps.LatLng(job.latitude, job.longitude);
     const marker = new google.maps.Marker({
       position,

@@ -17,19 +17,6 @@ class AuthForm extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-  // if (this.props.location.pathname !== nextProps.location.pathname){
-  //   this.props.clearErrors();
-  //   this.setState({
-  //     username: "",
-  //     email: "",
-  //     password: ""
-  //   });
-  // } else if (nextProps.loggedIn) {
-  //     this.props.history.push('/main');
-  //     // Router.History.back();
-  //     // this.props.history.goBack();
-  //   }
-
     if (nextProps.loggedIn) {
       this.props.history.push('/main');
       }
@@ -57,7 +44,6 @@ class AuthForm extends React.Component {
   }
 
   closeModal() {
-    // this.props.history.push('/');
     this.props.history.goBack();
   }
 
@@ -93,7 +79,6 @@ class AuthForm extends React.Component {
       }
     };
 
-    // determine what to render
     const formType = this.props.formType;
     let emailInput = null;
     let message = "Log In";

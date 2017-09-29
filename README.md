@@ -17,4 +17,4 @@
 + Fetch Wonoloers and display information with their name, picture, ratings and badges (user )
 + Search Wonoloers using badges types, auto-complete functionality for input
 
-![Wisualize Platform](app/assets/images/features.png)
+![Wisualize Platform](app/assets/images/features.gif)
