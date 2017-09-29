@@ -21,4 +21,17 @@ class ApplicationController < ActionController::Base
   def loggedin?
     !current_user.nil?
   end
+
+  def get_token
+    uri = URI.parse('https://api.wonolo.com/')
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl = true
+    http.ssl_version = :SSLv23
+    http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+    request = Net::HTTP::Post.new("/api_v2/authenticate")
+    request.add_field('Content-Type', 'application/json')
+    request.body = ({'api_key' => 'pk_live_VnKYnuDhqnx8fbg31jsS', 'secret_key' => 'sk_live_L2utzUTS3T2yEaN1YMYX'}).to_json
+    response = http.request(request)
+    ans = [JSON.parse(response.body)["token"], JSON.parse(response.body)["expires_at"]]
+  end
 end

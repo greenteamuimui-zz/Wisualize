@@ -81,9 +81,13 @@ img.in-progress {
   border-radius: 0px 0px 5px 5px;
 }
 
+.search-bar {
+  position: relative;
+}
+
 .w-submit-button {
   position: absolute;
-  top: 55px;
+  top: 0px;
   left: 360px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   background-color: #fdd601;
@@ -110,6 +114,7 @@ img.in-progress {
 .list-nav {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .prev {
@@ -117,4 +122,5 @@ display: flex;
 justify-content: center;
 align-items: center;
 font-size: 25px;
+cursor: pointer;
 }

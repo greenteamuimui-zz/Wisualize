@@ -114,6 +114,12 @@ class WonoloersList extends React.Component {
     return(
       <div className="WonoloersList">
         <h1>Wonoloers</h1>
+        <div className="list-nav">
+          {back}
+          <div className="next" onClick={this.handleSubmit}>
+            <i id="next" className="material-icons">navigate_next</i><h3 id="next">Next</h3>
+          </div>
+        </div>
         <div className="search-bar">
           {this.state.message}
           <form className="badgeSearch" onSubmit={this.handleSearch}>
@@ -136,12 +142,6 @@ class WonoloersList extends React.Component {
         </div>
         <div className="workers-list">
           {this.state.workers.map((worker, idx) => <WorkerBox worker={worker} key={idx} badges={this.props.badges}/>)}
-        </div>
-        <div className="list-nav">
-          {back}
-          <div className="next" onClick={this.handleSubmit}>
-            <i id="next" className="material-icons">navigate_next</i><h3 id="next">Next</h3>
-          </div>
         </div>
       </div>
     );
