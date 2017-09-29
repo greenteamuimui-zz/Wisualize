@@ -1,0 +1,483 @@
+/* line 1, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+.modal {
+  position: relative;
+  width: 300px;
+  box-shadow: 4px 4px 4px #a58f17;
+}
+
+/* line 10, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+.modal header {
+  font-family: 'Zilla Slab', serif;
+  font-size: 40px;
+  padding: 5px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-weight: 600;
+}
+
+/* line 20, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+.modal p {
+  font-family: 'Zilla Slab', serif;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+/* line 27, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+.modal a.x {
+  position: absolute;
+  font: 16px/100% arial, sans-serif;
+  border-radius: 1px;
+  color: darkgray;
+  right: 10px;
+  top: 5px;
+  text-shadow: 0 1px 0 #fff;
+  font-weight: 600;
+  padding: 10px;
+}
+
+/* line 39, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+.modal a.x:hover {
+  cursor: pointer;
+  color: black;
+}
+
+/* line 44, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+.modal form.auth-form {
+  color: #fdd601;
+  font-weight: 400;
+  font-family: 'Zilla Slab', serif;
+  font-size: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+/* line 53, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+.modal form.auth-form h2 {
+  padding: 10px 0px 5px 0px;
+  color: black;
+}
+
+/* line 58, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+label.extra input {
+  width: 250px;
+  padding: 5px 5px;
+  font-size: 16px;
+}
+
+/* line 64, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+.modal form {
+  margin-bottom: 20px;
+}
+
+/* line 68, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+.modal input.input {
+  width: 250px;
+  padding: 5px 5px;
+  font-size: 16px;
+}
+
+/* line 75, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+a.link-to-other {
+  margin-top: 20px;
+  font-family: 'Zilla Slab', serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 83, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+.modal input.submit-button {
+  position: relative;
+  font-family: 'Zilla Slab', serif;
+  font-size: 20px;
+  border: 1px solid #a58f17;
+  font-weight: bold;
+  color: white;
+  left: 90px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px #a58f17;
+  background-color: #fdd601;
+  margin-top: 10px;
+}
+
+/* line 99, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+.modal input.submit-button:hover {
+  background-color: #651601;
+  cursor: pointer;
+}
+
+/* line 104, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+.modal input.submit-button:active {
+  background-color: #651601;
+  box-shadow: 0 1px #999;
+  transform: translateY(4px);
+}
+
+/* line 110, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/authform.scss */
+.modal a {
+  font-family: 'Zilla Slab', serif;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #523209;
+}
+/* line 1, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/badges.scss */
+.badgebox {
+  border: 5px solid #ffdc00;
+  border-radius: 3pc;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(169, 169, 169, 0.63);
+  height: 50%;
+  padding: 5px;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+/* line 13, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/badges.scss */
+.indivBadge {
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+/* line 21, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/badges.scss */
+.indivBadge img {
+  width: 100px;
+}
+
+/* line 25, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/badges.scss */
+.indivBadge h2 {
+  font-size: 18px;
+  margin: auto;
+  text-align: center;
+}
+
+/* line 31, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/badges.scss */
+img.badge {
+  width: 100px;
+  padding: 5px;
+}
+/* line 1, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/header.scss */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  background-color: #4e4e4e;
+  opacity: 0.7;
+  border: 2px solid gold;
+  border-radius: 5px;
+}
+
+/* line 12, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/header.scss */
+.header-beforelogin {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 19, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/header.scss */
+.header-beforelogin a {
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 1, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/main.scss */
+.main {
+  border: 2px solid gold;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  max-height: 1100px;
+  background-color: rgba(78, 78, 78, 0.65);
+}
+
+/* line 11, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/main.scss */
+.app {
+  max-height: 1200px;
+  padding: 20px;
+}
+
+/* line 16, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/main.scss */
+body, html, main {
+  height: 100%;
+}
+
+/* line 20, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/main.scss */
+#root {
+  background-image: url("/assets/jobs.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1200px;
+}
+
+/* line 29, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/main.scss */
+.mainleft {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+/* line 36, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/main.scss */
+.mainleft h1 {
+  font-size: 35px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 42, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/main.scss */
+.header-afterlogin {
+  display: flex;
+}
+
+/* line 46, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/main.scss */
+.app-header h1 {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: gold;
+}
+
+/* line 53, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/main.scss */
+.header-afterlogin a {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: gold;
+  cursor: pointer;
+}
+/* line 1, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/map.scss */
+.map {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+
+/* line 7, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/map.scss */
+.mapComponent {
+  padding: 20px;
+}
+
+/* line 11, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/map.scss */
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+/* line 18, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/map.scss */
+.next:hover {
+  cursor: pointer;
+}
+
+/* line 21, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/map.scss */
+.ReactModalPortal h4 {
+  padding: 10px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+/* line 27, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/map.scss */
+a.x {
+  position: absolute;
+  left: 90%;
+  cursor: pointer;
+  padding: 5px;
+  top: 5%;
+  font-size: 15px;
+  font-weight: 600;
+}
+/* line 1, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/reset.scss */
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a, img, ol, ul, li, form, label, legend,
+table, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  color: gold;
+  font-size: 100%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  vertical-align: baseline;
+}
+/* line 1, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.WonoloersList {
+  position: relative;
+}
+
+/* line 6, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.wonoloers {
+  flex: 1.5;
+  padding: 20px;
+  overflow: auto;
+}
+
+/* line 12, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.wonoloers h1 {
+  font-size: 35px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 18, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.indivworker {
+  display: flex;
+  padding: 20px;
+  margin: auto;
+}
+
+/* line 24, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.workerright {
+  margin: auto;
+  overflow: auto;
+  width: 60%;
+  height: 120px;
+}
+
+/* line 31, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.workerleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 38, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.workerleft h2 {
+  padding: 5px;
+  font-size: 20px;
+}
+
+/* line 42, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.workerleft h3 {
+  padding: 3px;
+  font-size: 15px;
+}
+
+/* line 47, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.workers-list {
+  margin-top: 40px;
+}
+
+/* line 51, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.workerleft img {
+  width: 150px;
+}
+
+/* line 55, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+img.in-progress {
+  width: 60%;
+  margin-left: 20%;
+  height: 90%;
+}
+
+/* line 61, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.badgeSearch input.search {
+  border-radius: 5px 5px 0px 0px;
+  margin-left: 10px;
+  height: 18px;
+}
+
+/* line 67, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.badgeSearch h2 {
+  font-size: 23px;
+}
+
+/* line 71, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.auto-fill {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+/* line 77, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.results {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 168px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+/* line 84, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.search-bar {
+  position: relative;
+}
+
+/* line 88, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.w-submit-button {
+  position: absolute;
+  top: 0px;
+  left: 360px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-color: #fdd601;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 15px;
+  box-shadow: 2px 2px 2px darkgoldenrod;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* line 104, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.w-submit-button:active {
+  background-color: #c3a500;
+  box-shadow: 1 1px darkgoldenrod;
+  transform: translateY(4px);
+}
+
+/* line 110, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.input-form-text {
+  display: flex;
+}
+
+/* line 114, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.list-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* line 120, /home/greenteamuimui/Job_Search/code_challenges/Wisualize/app/assets/stylesheets/api/wonoloers.scss */
+.prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
