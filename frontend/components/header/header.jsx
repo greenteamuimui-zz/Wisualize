@@ -7,7 +7,6 @@ class Header extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log("here");
     if (!this.props.loggedIn && nextProps.loggedIn) {
       this.props.history.push('/main');
     }
